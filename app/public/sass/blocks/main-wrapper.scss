@@ -1,0 +1,7 @@
+.main-wrapper {
+	@include clearfix();
+	min-width: 762px;
+    min-height: 100%;
+    height: auto;
+    overflow: hidden;
+}

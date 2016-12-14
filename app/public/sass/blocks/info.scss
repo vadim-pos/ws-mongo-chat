@@ -1,0 +1,58 @@
+.info {
+	float: left;
+	width: 20%;
+	padding: 0 10px;
+	height: 100vh;
+	background-color: #ff8a65;
+	font-family: arial, sans-serif;
+	color: #fff;
+}
+.info__greeting {
+	padding-top: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	
+}
+.info__user {
+	display: none;
+	padding: 20px 0;
+}
+.info__user-img-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	width: 70px;
+	height: 70px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.info__user-img {
+	width: 100%;
+	height: auto;
+}
+.info__user-name {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 10px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.info__members {
+	display: none;
+}
+.info__members-title {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.info__members-list {
+	margin: 0;
+	padding: 0 0 0 20px;
+	list-style: none;
+}
+.info__members-item {
+	font-size: 16px;
+	margin-bottom: 4px;
+}

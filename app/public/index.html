@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <!--===== Basic Images =====-->
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!--===== CSS =====-->
+    <link rel="stylesheet" href="css/styles.min.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <div class="main-wrapper">
+
+        <aside class="info">
+            <div class="info__greeting">Welcome!</div>
+            <div class="info__user">
+                <div class="info__user-img-wrap">
+                    <img class="info__user-img" src="" alt="user image">
+                </div>
+                <div class="info__user-name">John Diergiooe</div>
+            </div>
+            <div class="info__members">
+                <div class="info__members-title">Members (<span class="info__members-count">0</span>)</div>
+                <ul class="info__members-list"></ul>
+            </div>
+        </aside>
+
+        <main class="main">
+            <div class="messages">
+                <ul class="messages__list">
+                    <!-- <li class="messages__item">
+                        <div class="messages__user-img-wrap">
+                            <img class="messages__user-img" src="http://lorempixel.com/output/people-q-c-640-640-6.jpg" alt="user image">
+                        </div>
+                        <div class="messages__data">
+                            <div class="messages__user">John Diergiooe <span class="messages__time">22:17</span></div>
+                            <div class="messages__content">Hello!</div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="auth">
+                <h2 class="auth__header">Authorization</h2>
+                <div class="auth__form-select">
+                    <a class="auth__form-link auth__form-link--active auth__reg-form-link" href="#">Create account</a>
+                    <a class="auth__form-link auth__sign-form-link" href="#">Sign in</a>
+                </div>
+                <div class="auth__form-wrap auth__reg-form">
+                    <form name="reg-form">
+                        <div class="auth__input-group">
+                            <input class="auth__input input" name="name" type="text" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="auth__input-group">
+                            <input class="auth__input input" name="nickname" type="text" placeholder="Choose your nickname" required>
+                        </div>
+                        <div class="auth__input-group">
+                            <input class="auth__input input" name="password" type="password" placeholder="Your password" required>
+                        </div>
+                        <div class="auth__image-box">
+                            <input class="auth__image-input" type="file" name="image" id="image" accept="image/*">
+                            <label class="auth__image-label" for="image">Drop your image or choose it.</label>
+                            <div class="auth__image-message"></div>
+                        </div>
+                        <div class="auth__btn-group">
+                            <button class="auth__submit btn" type="submit">Create account</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="auth__form-wrap auth__signin-form">
+                    <form name="signin-form">
+                        <div class="auth__input-group">
+                            <input class="auth__input input" name="nickname" type="text" placeholder="Your nickname" required>
+                        </div>
+                        <div class="auth__input-group">
+                            <input class="auth__input input" name="password" type="password" placeholder="Your password" required>
+                        </div>
+                        <div class="auth__btn-group">
+                            <button class="auth__submit btn" type="submit">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="auth__message"></div>
+            </div>
+            <div class="message">
+                <div class="message__form">
+                    <form name="message-form">
+                        <input class="message__input input" name="message" type="text" placeholder="Enter your message...">
+                        <button class="message__send btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script id="message-template" type="text/x-handlebars-template">
+    <li class="messages__item">
+        <div class="messages__user-img-wrap">
+            <img class="messages__user-img" src="{{userImage}}" alt="user image">
+        </div>
+        <div class="messages__data">
+            <div class="messages__user">{{userName}} <span class="messages__time">{{time}}</span></div>
+            <div class="messages__content">{{message}}</div>
+        </div>
+    </li>
+</script>
+    <!--===== JS =====-->
+    <script src="js/bundle.js"></script>
+</body>
+</html>

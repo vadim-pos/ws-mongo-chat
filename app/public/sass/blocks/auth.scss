@@ -1,0 +1,118 @@
+.auth {
+	position: absolute;
+	width: 500px;
+	top: 20px; left: 50%;
+	margin-left: -250px;
+	padding: 10px;
+	background-color: #ef9a9a;
+	border-radius: 6px;
+}
+.auth__header {
+	margin: 0;
+	font-family: arial, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+.auth__form-select {
+	padding: 10px;
+	font-size: 0;
+	text-align: center;
+}
+.auth__form-link {
+	display: inline-block;
+	margin: 0 40px;
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	&--active {
+		border-bottom: 2px solid #fff;
+	}
+}
+.auth__message {
+	display: none;
+	margin-top: 10px;
+	padding: 4px;
+	text-align: center;
+	letter-spacing: 2px;
+	border-radius: 16px;
+	color: #fff;
+	&--error {
+		background-color: #f44336;
+	}
+	&--info {
+		background-color: #98D692;
+	}
+}
+.auth__form-wrap {
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 6px;
+}
+.auth__image-box {
+	width: 180px;
+	height: 180px;
+	line-height: 180px;
+	margin: 0 auto 10px;
+	padding: 0 10px;
+	border-width: 3px;
+	border-style: dashed;
+	border-color: #53A7B9;
+	border-radius: 18px;
+	&--dragover {
+		border-color: #ff5722;
+		background-color: #edf4f7;
+	}
+	&--loaded {
+		border-color: #4caf50;
+		background-color: #f0ffdf;
+	}
+}
+.auth__image-input {
+	width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.auth__image-label {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1.4;
+	width: 100%;
+	color: #53A7B9;
+	text-align: center;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.auth__image-message {
+	display: inline-block;
+	width: 100%;
+	line-height: 1.4;
+	vertical-align: middle;
+	text-align: center;
+	word-break: break-all;
+	color: #2e7d32;
+}
+.auth__signin-form {
+	display: none;
+}
+.auth__input-group {
+	margin-bottom: 10px;
+}
+.auth__input {
+	width: 100%;
+	border: 1px solid #ef9a9a;
+}
+.auth__btn-group {
+	@include clearfix();
+}
+.auth__submit {
+	float: right;
+}

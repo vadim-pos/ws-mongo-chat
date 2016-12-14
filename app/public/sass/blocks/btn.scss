@@ -1,0 +1,16 @@
+.btn {
+	padding: 8px 14px;
+	font-size: 14px;
+	font-weight: 400;
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	background-color: #ff8a65;
+	outline: none;
+	&:hover {
+		background-color: #ff7245;
+	}
+	&:active {
+		background-color: #8ecc45;
+	}
+}

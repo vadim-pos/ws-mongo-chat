@@ -1,0 +1,23 @@
+.message {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.message__form {
+	@include clearfix();
+	display: none;
+	padding: 0 30px 20px;
+}
+.message__input {
+	float: left;
+	width: 88%;
+	height: 40px;
+	border: 1px solid #ff8a65;
+}
+.message__send {
+	float: right;
+	min-width: 60px;
+	width: 10%;
+	height: 40px;
+}

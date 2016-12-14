@@ -1,0 +1,44 @@
+.messages {
+	height: 100%;
+	padding: 20px;
+	overflow-y: scroll;
+}
+.messages__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.messages__item {
+	margin-bottom: 10px;
+}
+.messages__user-img-wrap {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.messages__user-img {
+	width: 100%;
+	height: auto;
+}
+.messages__data {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: top;
+}
+.messages__user {
+	margin-bottom: 4px;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+.messages__time {
+	font-weight: normal;
+	font-size: 14px;
+	padding-left: 10px;
+}
+.messages__content {
+	font-family: arial, sans-serif;
+	font-size: 16px;
+}
